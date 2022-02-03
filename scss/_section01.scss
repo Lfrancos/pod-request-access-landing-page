@@ -1,0 +1,87 @@
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: hsla(224%, 35%, 11%, .8);
+    z-index: -1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+    // background-color: $blue-darker;
+    background-image: url(/assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    main {
+        z-index: 2;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 1rem;
+        img {
+            width: 40%;
+            max-width: 135px;
+            // height: 56px;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 26px;
+            text-transform: uppercase;
+            color: $green;
+            line-height: 2rem;
+            margin: 1.5rem 0;
+            font-weight: 300;
+            span {
+                color: $white;
+            }
+        }
+        p {
+            line-height: 1.3rem;
+            color: $blue-light;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: .8rem;
+            margin-bottom: 2rem;
+            img {
+                width: 10%;
+                height: 100%;
+                flex-basis: 90px;
+                margin: 0;
+            }
+        }
+
+        .form {
+
+            input {
+                width: 100%;
+                border: none;
+                background-color: $blue-dark;
+                padding: 1rem;
+                border-radius: 30px;
+                margin-bottom: 1rem;
+            }
+            button {
+                width: 100%;
+                color: $blue-darker;
+                border: none;
+                border-radius: 30px;
+                background-color: $green;
+                padding: 1rem;
+                box-shadow: 0 2rem 50px -10px $green;
+            }
+        }
+
+
+    }
+}
