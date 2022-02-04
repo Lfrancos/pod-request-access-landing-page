@@ -22,7 +22,7 @@ body {
         z-index: 2;
         text-align: center;
         margin: 0 auto;
-        max-width: 1440px;
+        max-width: 500px;
         padding: 1rem;
         img {
             width: 40%;
@@ -68,12 +68,16 @@ body {
                     width: 100%;
                     border: none;
                     background-color: $blue-dark;
-                    padding: 1rem 3rem;
+                    padding: 1rem 2rem;
                     border-radius: 30px;
                     font-weight: bolder;
                     color: $blue-light;
                 }
-                p {
+                input:active     {
+                    border: $white;
+                }
+                .error {
+                    text-align: left;
                     margin: 0;
                     margin-bottom: 1rem;
                     margin-left: 1rem;
@@ -83,7 +87,7 @@ body {
 
                 }
             }
-            button {
+            .button {
                 width: 100%;
                 color: $blue-darker;
                 border: none;
@@ -93,11 +97,14 @@ body {
                 box-shadow: 0 2rem 50px -10px $green;
                 font-weight: bolder;
             }
-            button:hover {
+            .button:hover {
                 cursor: pointer;
                 background-color: hsl(157%, 74%, 80%);
                 box-shadow:  0 2rem 50px -10px hsl(157%, 74%, 80%);
             }
+            // .error {
+            //     display: none;
+            // }
         }
 
 

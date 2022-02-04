@@ -23,6 +23,7 @@
         background-position: right top;
         background-color: $blue-darker;
         main {
+            max-width: 1440px;
             margin: 2rem 2rem;
             text-align: left;
             .logo {
@@ -53,10 +54,13 @@
             .form {
                 position: relative;
                 margin-bottom: 3rem;
+                .input {
+                    width: 70%;
+                }
                 input {
                     width: 70%;
                 }
-                button {
+                .button {
                     position: absolute;
                     top: .3rem;
                     left: 39.2%;

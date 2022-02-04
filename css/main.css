@@ -103,7 +103,7 @@ body main {
   z-index: 2;
   text-align: center;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 500px;
   padding: 1rem;
 }
 
@@ -158,13 +158,18 @@ body main .form .input input {
   width: 100%;
   border: none;
   background-color: #2b334a;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 30px;
   font-weight: bolder;
   color: #c2cbe5;
 }
 
-body main .form .input p {
+body main .form .input input:active {
+  border: white;
+}
+
+body main .form .input .error {
+  text-align: left;
   margin: 0;
   margin-bottom: 1rem;
   margin-left: 1rem;
@@ -173,7 +178,7 @@ body main .form .input p {
   color: red;
 }
 
-body main .form button {
+body main .form .button {
   width: 100%;
   color: #121726;
   border: none;
@@ -185,7 +190,7 @@ body main .form button {
   font-weight: bolder;
 }
 
-body main .form button:hover {
+body main .form .button:hover {
   cursor: pointer;
   background-color: #a6f2d5;
   -webkit-box-shadow: 0 2rem 50px -10px #a6f2d5;
@@ -217,6 +222,7 @@ body main .form button:hover {
     background-color: #121726;
   }
   body main {
+    max-width: 1440px;
     margin: 2rem 2rem;
     text-align: left;
   }
@@ -253,10 +259,13 @@ body main .form button:hover {
     position: relative;
     margin-bottom: 3rem;
   }
+  body main .form .input {
+    width: 70%;
+  }
   body main .form input {
     width: 70%;
   }
-  body main .form button {
+  body main .form .button {
     position: absolute;
     top: .3rem;
     left: 39.2%;
