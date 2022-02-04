@@ -58,19 +58,21 @@ One thing that was interesting to use was
 One of the problems that I had was to make sure that the background image always had an overlay, the solution that I found ended up not being the one that I needed, because it solved the problem to the naked-eye but once I started to take the webpage to extremes I started to see that it was not the right solution.
 This is what I used:
 
->body::before {
->    content: '';
->    position: absolute;
->    top: 0;
->    min-width: 100%;
->    min-height: 100%;
->    background-color: hsla(224%, 35%, 11%, .8);
->    z-index: -1;
->}
+```
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: hsla(224%, 35%, 11%, .8);
+    z-index: -1;
+}
+```
 
 But what I thought it was a good solution ended up not solving the problem. When you take a look at this in mobile and in portrait mode, when you scroll down the image won't have the overlay because the overlay is the size of the screen and not the size of the content.
 
--- I really need to figure out a way to do that.
+> I really need to figure out a way to do that.
 
 ### Continued development
 
