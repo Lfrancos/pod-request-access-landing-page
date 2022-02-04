@@ -3,17 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <script src="./js/script.js" defer></script>
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
-  Publish your podcasts everywhere.
-
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
-
-  Request access
+  <main>
+    <img class="logo" src="./assets/desktop/logo.svg" alt="">
+    <div class="background">
+      <h1>Publish your podcasts <br> <span>everywhere.</span></h1>
+      <p>
+        Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      </p>
+      <div class="order">
+        <div class="flex">
+          <img src="./assets/desktop/spotify.svg" alt="#">
+          <img src="./assets/desktop/apple-podcast.svg" alt="#">
+          <img src="./assets/desktop/google-podcasts.svg" alt="#">
+          <img src="./assets/desktop/pocket-casts.svg" alt="#">
+        </div>
+        <form class="form">
+          <div class="input">
+            <input class="input-field" type="email" placeholder="Email address">
+            <span class="error"></span>
+          </div>
+          <br>
+          <input class="button" value="Request access" name="request access"  type="submit"></input>
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
