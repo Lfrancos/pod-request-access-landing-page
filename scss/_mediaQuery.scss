@@ -13,12 +13,12 @@
         content: '';
         position: absolute;
         bottom: 0;
-        background-image: url(./assets/desktop/bg-pattern-dots.svg);
+        background-image: url(../assets/desktop/bg-pattern-dots.svg);
         width: 200px;
         height: 100px;
     }
     body {
-        background-image: url(./assets/tablet/image-host.jpg);
+        background-image: url(../assets/tablet/image-host.jpg);
         background-size: auto;
         background-position: right top;
         background-color: $blue-darker;
@@ -83,7 +83,7 @@
         background-position: right;
         margin: 0;
         main {
-            background-image: url(./assets/desktop/image-host.jpg);
+            background-image: url(../assets/desktop/image-host.jpg);
             background-repeat: no-repeat;
             background-position: right;
             max-width: 1440px;

@@ -14,7 +14,7 @@ body {
     justify-content: center;
     color: $white;
     // background-color: $blue-darker;
-    background-image: url(./assets/mobile/image-host.jpg);
+    background-image: url(../assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -62,16 +62,26 @@ body {
         }
 
         .form {
+            .input {
 
-            input {
-                width: 100%;
-                border: none;
-                background-color: $blue-dark;
-                padding: 1rem 3rem;
-                border-radius: 30px;
-                margin-bottom: 1rem;
-                font-weight: bolder;
-                color: $blue-light;
+                input {
+                    width: 100%;
+                    border: none;
+                    background-color: $blue-dark;
+                    padding: 1rem 3rem;
+                    border-radius: 30px;
+                    font-weight: bolder;
+                    color: $blue-light;
+                }
+                p {
+                    margin: 0;
+                    margin-bottom: 1rem;
+                    margin-left: 1rem;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: red;
+
+                }
             }
             button {
                 width: 100%;
