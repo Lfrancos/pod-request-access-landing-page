@@ -1,0 +1,72 @@
+// //// tablet //////////////
+@media screen and (min-width: 768px) {
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: hsla(224%, 35%, 11%, 0);
+        z-index: -1;
+    }
+    body::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-image: url(/assets/desktop/bg-pattern-dots.svg);
+        width: 200px;
+        height: 100px;
+    }
+    body {
+        background-image: url(/assets/tablet/image-host.jpg);
+        background-size: auto;
+        background-position: right top;
+        background-color: $blue-darker;
+        main {
+            margin: 2rem 2rem;
+            text-align: left;
+            .logo {
+                text-align: left;
+                margin-bottom: 7rem;
+            }
+            .background {
+                text-align: left;
+                margin:0;
+                background-color: $blue-darker;
+                max-width: 635px;
+                padding: 3rem 2rem .6rem .6rem;
+                h1 {
+                    font-size: 42px;
+                    line-height: 3rem;;
+                }
+                p {
+                    width: 70%;
+                    font-size: 18px;
+                    line-height: 1.7rem;
+                }
+            }
+            .order {
+                display: flex;
+                flex-direction: column-reverse;
+
+            }
+            .form {
+                position: relative;
+                margin-bottom: 3rem;
+                input {
+                    width: 70%;
+                }
+                button {
+                    position: absolute;
+                    top: .3rem;
+                    left: 39.2%;
+                    width: 30%;
+                    padding: .7rem;
+                }
+            }
+        }
+
+    }
+
+}
+// desktop///////////////////////////////

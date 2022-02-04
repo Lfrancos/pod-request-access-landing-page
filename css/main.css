@@ -158,9 +158,11 @@ body main .form input {
   width: 100%;
   border: none;
   background-color: #2b334a;
-  padding: 1rem;
+  padding: 1rem 3rem;
   border-radius: 30px;
   margin-bottom: 1rem;
+  font-weight: bolder;
+  color: #c2cbe5;
 }
 
 body main .form button {
@@ -172,5 +174,86 @@ body main .form button {
   padding: 1rem;
   -webkit-box-shadow: 0 2rem 50px -10px #56e6af;
           box-shadow: 0 2rem 50px -10px #56e6af;
+  font-weight: bolder;
+}
+
+body main .form button:hover {
+  cursor: pointer;
+  background-color: #a6f2d5;
+  -webkit-box-shadow: 0 2rem 50px -10px #a6f2d5;
+          box-shadow: 0 2rem 50px -10px #a6f2d5;
+}
+
+@media screen and (min-width: 768px) {
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(18, 23, 38, 0);
+    z-index: -1;
+  }
+  body::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-image: url(/assets/desktop/bg-pattern-dots.svg);
+    width: 200px;
+    height: 100px;
+  }
+  body {
+    background-image: url(/assets/tablet/image-host.jpg);
+    background-size: auto;
+    background-position: right top;
+    background-color: #121726;
+  }
+  body main {
+    margin: 2rem 2rem;
+    text-align: left;
+  }
+  body main .logo {
+    text-align: left;
+    margin-bottom: 7rem;
+  }
+  body main .background {
+    text-align: left;
+    margin: 0;
+    background-color: #121726;
+    max-width: 635px;
+    padding: 3rem 2rem .6rem .6rem;
+  }
+  body main .background h1 {
+    font-size: 42px;
+    line-height: 3rem;
+  }
+  body main .background p {
+    width: 70%;
+    font-size: 18px;
+    line-height: 1.7rem;
+  }
+  body main .order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body main .form {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+  body main .form input {
+    width: 70%;
+  }
+  body main .form button {
+    position: absolute;
+    top: .3rem;
+    left: 39.2%;
+    width: 30%;
+    padding: .7rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

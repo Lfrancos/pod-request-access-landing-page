@@ -67,9 +67,11 @@ body {
                 width: 100%;
                 border: none;
                 background-color: $blue-dark;
-                padding: 1rem;
+                padding: 1rem 3rem;
                 border-radius: 30px;
                 margin-bottom: 1rem;
+                font-weight: bolder;
+                color: $blue-light;
             }
             button {
                 width: 100%;
@@ -79,6 +81,12 @@ body {
                 background-color: $green;
                 padding: 1rem;
                 box-shadow: 0 2rem 50px -10px $green;
+                font-weight: bolder;
+            }
+            button:hover {
+                cursor: pointer;
+                background-color: hsl(157%, 74%, 80%);
+                box-shadow:  0 2rem 50px -10px hsl(157%, 74%, 80%);
             }
         }
 
