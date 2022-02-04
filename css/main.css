@@ -94,7 +94,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  background-image: url(/assets/mobile/image-host.jpg);
+  background-image: url(./assets/mobile/image-host.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -198,12 +198,12 @@ body main .form button:hover {
     content: '';
     position: absolute;
     bottom: 0;
-    background-image: url(/assets/desktop/bg-pattern-dots.svg);
+    background-image: url(./assets/desktop/bg-pattern-dots.svg);
     width: 200px;
     height: 100px;
   }
   body {
-    background-image: url(/assets/tablet/image-host.jpg);
+    background-image: url(./assets/tablet/image-host.jpg);
     background-size: auto;
     background-position: right top;
     background-color: #121726;
@@ -270,12 +270,13 @@ body main .form button:hover {
     margin: 0;
   }
   body main {
-    background-image: url(/assets/desktop/image-host.jpg);
+    background-image: url(./assets/desktop/image-host.jpg);
     background-repeat: no-repeat;
     background-position: right;
     max-width: 1440px;
     min-width: 1440px;
     margin: 0 auto;
+    padding-left: 9rem;
   }
   body main .background {
     margin: 0 auto 0 0;
