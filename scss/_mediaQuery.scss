@@ -70,3 +70,30 @@
 
 }
 // desktop///////////////////////////////
+
+@media screen and (min-width: 1024px) {
+    body::after {
+        right: 0;
+        bottom: 6rem;
+        height: 104px;
+        z-index: 2;
+    }
+    body {
+        background-image: none;
+        background-position: right;
+        margin: 0;
+        main {
+            background-image: url(/assets/desktop/image-host.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+            max-width: 1440px;
+            min-width: 1440px;
+            // margin: 0;
+            margin: 0 auto;
+            .background {
+                margin: 0 auto 0 0 ;
+            }
+        }
+    }
+
+}
